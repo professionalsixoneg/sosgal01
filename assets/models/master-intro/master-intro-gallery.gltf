@@ -17,7 +17,9 @@
                 26,
                 27,
                 28,
-                29
+                29,
+                30,
+                31
             ]
         }
     ],
@@ -364,6 +366,41 @@
                 0.10093627125024796,
                 0.8565590381622314
             ]
+        },
+        {
+            "mesh" : 18,
+            "name" : "MeditationInstructionsButton",
+            "rotation" : [
+                0.5,
+                0.5,
+                -0.5,
+                0.4999999701976776
+            ],
+            "scale" : [
+                0.75,
+                1,
+                0.75
+            ],
+            "translation" : [
+                -6.2409257888793945,
+                5.0693159103393555,
+                1.4793318510055542
+            ]
+        },
+        {
+            "mesh" : 19,
+            "name" : "InnerJourneyButton",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                -0.7071068286895752,
+                -1.1520232590100932e-07
+            ],
+            "translation" : [
+                -4.2232208251953125,
+                4.167832851409912,
+                3.0487518310546875
+            ]
         }
     ],
     "materials" : [
@@ -641,6 +678,46 @@
                 "metallicRoughnessTexture" : {
                     "index" : 26
                 }
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 27
+            },
+            "name" : "MeditationInstructionsButton",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 28
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 29
+            },
+            "name" : "InnerJourneyButton",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 30
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
             }
         }
     ],
@@ -1005,6 +1082,34 @@
                     "material" : 19
                 }
             ]
+        },
+        {
+            "name" : "MeditationInstructionsButton",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 120,
+                        "NORMAL" : 121,
+                        "TEXCOORD_0" : 122
+                    },
+                    "indices" : 66,
+                    "material" : 20
+                }
+            ]
+        },
+        {
+            "name" : "InnerJourneyButton",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 123,
+                        "NORMAL" : 124,
+                        "TEXCOORD_0" : 125
+                    },
+                    "indices" : 66,
+                    "material" : 21
+                }
+            ]
         }
     ],
     "textures" : [
@@ -1115,6 +1220,22 @@
         {
             "sampler" : 0,
             "source" : 23
+        },
+        {
+            "sampler" : 1,
+            "source" : 24
+        },
+        {
+            "sampler" : 1,
+            "source" : 24
+        },
+        {
+            "sampler" : 1,
+            "source" : 25
+        },
+        {
+            "sampler" : 1,
+            "source" : 25
         }
     ],
     "images" : [
@@ -1237,6 +1358,16 @@
             "mimeType" : "image/png",
             "name" : "PaintedPlaster017_1K_Roughness",
             "uri" : "textures/PaintedPlaster017_1K_Roughness.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "MeditationInstructionsButton",
+            "uri" : "textures/MeditationInstructionsButton.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "InnerJourneyButton",
+            "uri" : "textures/InnerJourneyButton.png"
         }
     ],
     "accessors" : [
@@ -2239,6 +2370,62 @@
             "componentType" : 5123,
             "count" : 7536,
             "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 120,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                0.8888888955116272,
+                0,
+                0.5
+            ],
+            "min" : [
+                -0.8888888955116272,
+                0,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 121,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 122,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 123,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                0.8888888955116272,
+                0,
+                0.5
+            ],
+            "min" : [
+                -0.8888888955116272,
+                0,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 124,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 125,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
         }
     ],
     "bufferViews" : [
@@ -2841,6 +3028,36 @@
             "buffer" : 0,
             "byteLength" : 15072,
             "byteOffset" : 1072452
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1087524
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1087572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 1087620
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1087652
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1087700
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 1087748
         }
     ],
     "samplers" : [
@@ -2857,7 +3074,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 1087524,
+            "byteLength" : 1087780,
             "uri" : "master-intro-gallery.bin"
         }
     ]
